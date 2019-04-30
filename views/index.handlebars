@@ -5,7 +5,7 @@
   <div class="grid-container">
       
                 {{!-- <div class="jumbotron"> --}}
-<div class="notsleepy">
+<div class="sleepy">
 <h2>List of Burgers</h2>
 
 <ol>
@@ -16,7 +16,7 @@
   {{/each}}
 </ol>
 </div>
-<div class="sleepy">
+<div class="notsleepy">
 <h2>Burgers that were eaten</h2>
  
 <ol>
@@ -38,8 +38,8 @@
     <input type="text" id="ca" name="name">
   </div>
 
-   <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+   <input type="radio" name="sleepy" style="opacity: 0" value="0" checked><br>
+  
 
 
   <button type="submit">Submit</button>

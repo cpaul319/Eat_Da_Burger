@@ -1,5 +1,5 @@
 li {
-  width: 400px;
+  width: 470px;
   padding: 5px;
   margin: 5px;
   /* background-color: rgba(255, 255, 255, 0.3); */
@@ -29,15 +29,16 @@ li {
 body{
   width: auto;
   align-content: center;
+  background-image: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2015/09/big-mac.jpg?auto=format&q=60&fit=max&w=930");
   
-  background-image: url("https://cdn.macrumors.com/article-new/2018/03/bobsburgers-800x450.jpg");
+  /* background-image: url("https://cdn.macrumors.com/article-new/2018/03/bobsburgers-800x450.jpg"); */
   background-repeat: no-repeat;
   background-size:cover;
   
 }
 .sleepy{
   
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   
   padding: 20px;
   font-size: 30px;
@@ -45,7 +46,7 @@ body{
 }
 .notsleepy{
   
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
  
   padding: 20px;
   font-size: 30px;
@@ -60,7 +61,7 @@ body{
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 350px;
+  grid-column-gap: 200px;
   padding: 10px;
   text-align: center;
 }
@@ -70,6 +71,13 @@ body{
  
  justify-content: center;
   grid-column: 1 / span 3;
+}
+
+.jumbotron{
+  
+  background-image: url("https://cdn.macrumors.com/article-new/2018/03/bobsburgers-800x450.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 /* .grid-item {
