@@ -1,0 +1,49 @@
+
+<div id="heading">
+<h1>Eat Da Burger!</h1>
+</div>
+  <div class="grid-container">
+      
+                {{!-- <div class="jumbotron"> --}}
+<div class="notsleepy">
+<h2>List of Burgers</h2>
+
+<ol>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ol>
+</div>
+<div class="sleepy">
+<h2>Burgers that were eaten</h2>
+ 
+<ol>
+  {{#each cats}}
+    {{#if sleepy}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ol>
+</div>
+                </div>
+  </div>
+  <div class="grid-container">
+
+<form class="create-form" >
+
+  <div class="form-group" id="item1">
+    <label for="ca"><h2>Add a Burger</h2></label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+   <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+    <input type="radio" name="sleepy" value="0"> Awake
+
+
+  <button type="submit">Submit</button>
+</form>
+ </div>   
+
+

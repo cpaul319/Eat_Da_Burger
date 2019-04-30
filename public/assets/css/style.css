@@ -1,0 +1,81 @@
+li {
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+ 
+}
+
+.label {
+  font-weight: bold;
+  
+}
+
+.create-update-form {
+  text-align: center;
+ 
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  align-content: center;
+  margin-bottom: 5px;
+}
+body{
+  width: auto;
+  align-content: center;
+  
+  background-image: url("https://cdn.macrumors.com/article-new/2018/03/bobsburgers-800x450.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+.sleepy{
+  
+  background-color: rgba(255, 255, 255, 0.5);
+  
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.notsleepy{
+  
+  background-color: rgba(255, 255, 255, 0.5);
+ 
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#heading{
+  text-align: center;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 350px;
+  padding: 10px;
+  text-align: center;
+}
+
+#add {
+
+ 
+ justify-content: center;
+  grid-column: 1 / span 3;
+}
+
+/* .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
