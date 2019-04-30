@@ -10,3 +10,4 @@ CREATE TABLE cats
 	sleepy BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+select * from cats;
