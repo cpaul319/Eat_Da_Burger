@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
   database: "heroku_064343c347264e4"
 });
 
-// Make connection.
+ 
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
