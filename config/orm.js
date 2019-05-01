@@ -40,6 +40,7 @@ function objToSql(ob) {
 }
 
 // Object for all our SQL statement functions.
+//heroku
 var orm = {
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
