@@ -38,6 +38,7 @@ $(function() {
       function() {
         console.log("created new cat");
         // Reload the page to get the updated list
+        //addd somethiohd
         location.reload();
       }
     );
