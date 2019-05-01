@@ -1,5 +1,7 @@
-INSERT INTO cats (name) VALUES ('Cheeseburger',false);
-INSERT INTO cats (name) VALUES ('BaconBurger',false);
-INSERT INTO cats (name) VALUES ('Veggie',false);
+INSERT INTO burgers (name,sleepy)
+VALUES ("Veggie Burger", false),
+("Bacon Burger",false),
+("Cheese Burger", false)
+--Insert into cats (devoured) values (true) You can do all of this in one line
 
  
