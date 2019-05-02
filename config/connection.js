@@ -1,20 +1,24 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   port: 3306,
-//   user: "trilogy",
-//   password: "password123",
-//   database: "cat_db"
-// });
-
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-02.cleardb.net",
+if (process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  var connection = mysql.createConnection({
+  host: "localhost",
   port: 3306,
-  user: "b39ca02b6544a3",
-  password: "88f1f4a5",
-  database: "heroku_064343c347264e4"
+  user: "trilogy",
+  password: "password123",
+  database: "cat_db"
 });
+}
+//old heroku server, this is an attempt at creating the app that won't crash
+// var connection = mysql.createConnection({
+//   host: "us-cdbr-iron-east-02.cleardb.net",
+//   port: 3306,
+//   user: "b39ca02b6544a3",
+//   password: "88f1f4a5",
+//   database: "heroku_064343c347264e4"
+// });
 
  
 connection.connect(function(err) {
