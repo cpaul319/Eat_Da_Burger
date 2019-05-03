@@ -36,7 +36,7 @@ body{
   background-size:cover;
   
 }
-.sleepy{
+.burger{
   
   background-color: rgba(255, 255, 255, 0.3);
   
@@ -44,7 +44,7 @@ body{
   font-size: 30px;
   text-align: center;
 }
-.notsleepy{
+.devouredBurger{
   
   background-color: rgba(255, 255, 255, 0.3);
  

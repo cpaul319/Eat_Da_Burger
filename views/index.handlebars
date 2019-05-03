@@ -5,24 +5,24 @@
   <div class="grid-container">
       
                 {{!-- <div class="jumbotron"> --}}
-<div class="sleepy">
+<div class="burger">
 <h2>List of Burgers</h2>
 
 <ol>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ol>
 </div>
-<div class="notsleepy">
+<div class="devouredBurger">
 <h2>Burgers that were eaten</h2>
  
 <ol>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
 </ol>
@@ -34,11 +34,11 @@
 <form class="create-form" >
 
   <div class="form-group" id="item1">
-    <label for="ca"><h2>Add a Burger</h2></label>
-    <input type="text" id="ca" name="name">
+    <label for="burger"><h2>Add a Burger</h2></label>
+    <input type="text" id="burger" name="name">
   </div>
 
-   <input type="radio" name="sleepy" style="opacity: 0" value="0" checked><br>
+   <input type="radio" name="devoured" style="opacity: 0" value="0" checked><br>
   
 
 
