@@ -10,5 +10,5 @@ CREATE TABLE burgers
 	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
- DELETE FROM burgers where id > 171;
+  
 select * from burgers;
